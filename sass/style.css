@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body, html {
+    max-width: 1024px;
+    margin: 0 auto;
+    
+    color: white;
+}
+
+body {
+    border: 2px solid pink;
+}
+
+/*# sourceMappingURL=style.css.map */
