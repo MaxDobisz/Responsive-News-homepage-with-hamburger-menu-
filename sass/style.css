@@ -1,7 +1,10 @@
-body {
+html {
   font-size: 15px;
-  padding: 15px;
   font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 15px;
 }
 
 img {
@@ -20,17 +23,26 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.header .header__logo {
+.header__logo {
   height: 2rem;
 }
-.header .header__nav {
+.header__nav {
   display: none;
 }
-.hero .hero__image {
+
+.hero__image {
   width: 100%;
   margin: 1rem 0;
 }
-.hero .hero__title {
-  font-size: 2rem;
+.hero__title {
+  font-size: 3rem;
   line-height: 100%;
+  font-weight: 800;
+}
+.hero__button {
+  background-color: hsl(5deg, 85%, 63%);
+  color: white;
+  font-size: 1rem;
+  padding: 1em 2em;
+  letter-spacing: 0.3rem;
 }/*# sourceMappingURL=style.css.map */
