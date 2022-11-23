@@ -1,19 +1,36 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-body, html {
-    max-width: 1024px;
-    margin: 0 auto;
-    
-    color: white;
-}
-
 body {
-    border: 2px solid pink;
+  font-size: 15px;
+  padding: 15px;
+  font-family: "Inter", sans-serif;
 }
 
-/*# sourceMappingURL=style.css.map */
+img {
+  display: block;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 0;
+}
+
+.header {
+  outline: 2px solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__logo {
+  height: 2rem;
+}
+.header .header__nav {
+  display: none;
+}
+.hero .hero__image {
+  width: 100%;
+  margin: 1rem 0;
+}
+.hero .hero__title {
+  font-size: 2rem;
+  line-height: 100%;
+}/*# sourceMappingURL=style.css.map */

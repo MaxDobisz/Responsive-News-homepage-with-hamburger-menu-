@@ -2,29 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="sass/reset.css">
   <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
 <!-- HEADER START -->
-  <header>
-    <img src="./assets/images/logo.svg" alt="">
-    <nav>
-      <button>
-        <img src="./assets/images/icon-menu.svg" alt="">
-      </button>
-      <ul>
+  <header class="header">
+    <img class="header__logo" src="./assets/images/logo.svg" alt="" >
+    <button class="nav__hamburger">
+      <img src="./assets/images/icon-menu.svg" alt="">
+    </button>
+    <nav class="header__nav">
+      <ul class="nav__list">
         <li>Home</li>
         <li>New</li>
-        <li>Popular</li>
+          <li>Popular</li>
         <li>Trending</li>
         <li>Categories</li>
       </ul>
     </nav>
   </header>
+  
 <!-- HEADER END -->
-  The Bright Future of Web 3.0?
+<section class="hero">
+  <img class="hero__image" src="./assets/images/image-web-3-mobile.jpg" alt="">
+  <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
+</section>
+  
 
   We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
   But is it really fulfilling its promise?

@@ -1,0 +1,51 @@
+body {
+    font-size: 15px;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
+.header {
+    outline: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    .header__logo {
+        height: 2rem;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .nav__hamburger {
+        
+    }
+
+    .nav__list {
+       
+    }
+}
+
+.hero {
+     .hero__image {
+        width: 100%;
+        margin: 1rem 0;
+     }
+
+     .hero__title {
+        font-size: 2rem;
+        line-height: 100%;
+
+     }
+}
