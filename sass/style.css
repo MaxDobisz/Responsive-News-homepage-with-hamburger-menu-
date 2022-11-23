@@ -45,4 +45,27 @@ button {
   font-size: 1rem;
   padding: 1em 2em;
   letter-spacing: 0.3rem;
+}
+
+.news {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+.news__title {
+  color: hsl(35deg, 77%, 62%);
+}
+
+.top-articles__article {
+  display: flex;
+}
+.top-articles__article__image {
+  width: 30%;
+}
+.top-articles__article .article__content {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  color: red;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

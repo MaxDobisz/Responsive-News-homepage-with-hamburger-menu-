@@ -54,5 +54,29 @@ button {
 }
 
 .news {
-    
+    background-color: black;
+    color: white;
+    padding: 1rem;
+
+    &__title{
+        color: hsl(35, 77%, 62%);
+    }
+}
+
+.top-articles {
+    &__article{
+       display: flex;
+
+       &__image{
+        width: 30%;
+       }
+
+       .article__content{
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        color:red;
+        justify-content: space-between;
+       }
+    }
 }
