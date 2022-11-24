@@ -1,6 +1,12 @@
+$Off-white: hsl(36, 100%, 99%); 
+$Grayish-blue: hsl(233, 8%, 79%); 
+$Grayish-blue--dark: hsl(236, 13%, 42%);
+$Grayish-blue--very-dark: hsl(240, 100%, 5%);
+
+
 html {
-    font-size: 15px;
     font-family: 'Inter', sans-serif;
+    font-size: 15px;
 }
 
 body {
@@ -17,11 +23,14 @@ button {
     padding: 0;
 }
 
+hr {
+    color: hsl(240, 100%, 5%)
+}
+
 .header {
-    outline: 2px solid blue;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 1rem 0 2rem;
 
     &__logo {
         height: 2rem;
@@ -35,48 +44,92 @@ button {
 .hero {
     &__image {
         width: 100%;
-        margin: 1rem 0;
     }
 
     &__title {
         font-size: 3rem;
-        line-height: 100%;
         font-weight: 800;
+        line-height: 100%;
+        padding: 1rem 0;
+    }
+
+   
+
+    &__text {
+        color: hsl(236, 13%, 42%);
     }
 
     &__button {
         background-color: hsl(5, 85%, 63%);
         color: white;
         font-size: 1rem;
-        padding: 1em 2em;
+        font-weight: 700;
         letter-spacing: .3rem;
+        margin: 1.5rem 0;
+        padding: 1em 2em;
     }
 }
 
 .news {
     background-color: black;
     color: white;
+    margin: 2rem 0;
     padding: 1rem;
 
-    &__title{
+    &__section-title{
         color: hsl(35, 77%, 62%);
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    &__item {
+        margin: 2rem 0;
+
+        .news-item__title{
+            margin-bottom: 1rem;
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        .news-item__text{
+            color: hsl(233, 8%, 79%);
+        }
     }
 }
 
-.top-articles {
-    &__article{
-       display: flex;
 
-       &__image{
-        width: 30%;
-       }
+.article {
+    margin: 3rem 0;
+    display: flex;
+    gap: 5%;
+    height: 130px;
+    
+    &__image{
+        height: 100%;
+    }
 
-       .article__content{
+    &__content{
         display: flex;
         flex-direction: column;
-        background-color: aqua;
-        color:red;
         justify-content: space-between;
-       }
+    }
+
+    &__title-number {
+        font-size: 1.8rem;
+        color: hsl(233, 8%, 79%);
+        font-weight: 800;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 1.1rem;
+      
+    }
+
+    &__text {
+        font-size: 1rem;
+        color: $Grayish-blue--dark;
+        font-weight: 400;
     }
 }
+

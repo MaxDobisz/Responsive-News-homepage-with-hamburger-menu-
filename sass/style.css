@@ -1,6 +1,6 @@
 html {
-  font-size: 15px;
   font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 
 body {
@@ -17,11 +17,14 @@ button {
   padding: 0;
 }
 
+hr {
+  color: hsl(240deg, 100%, 5%);
+}
+
 .header {
-  outline: 2px solid blue;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 1rem 0 2rem;
 }
 .header__logo {
   height: 2rem;
@@ -32,40 +35,74 @@ button {
 
 .hero__image {
   width: 100%;
-  margin: 1rem 0;
 }
 .hero__title {
   font-size: 3rem;
-  line-height: 100%;
   font-weight: 800;
+  line-height: 100%;
+  padding: 1rem 0;
+}
+.hero__text {
+  color: hsl(236deg, 13%, 42%);
 }
 .hero__button {
   background-color: hsl(5deg, 85%, 63%);
   color: white;
   font-size: 1rem;
-  padding: 1em 2em;
+  font-weight: 700;
   letter-spacing: 0.3rem;
+  margin: 1.5rem 0;
+  padding: 1em 2em;
 }
 
 .news {
   background-color: black;
   color: white;
+  margin: 2rem 0;
   padding: 1rem;
 }
-.news__title {
+.news__section-title {
   color: hsl(35deg, 77%, 62%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.news__item {
+  margin: 2rem 0;
+}
+.news__item .news-item__title {
+  margin-bottom: 1rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.news__item .news-item__text {
+  color: hsl(233deg, 8%, 79%);
 }
 
-.top-articles__article {
+.article {
+  margin: 3rem 0;
   display: flex;
+  gap: 5%;
+  height: 130px;
 }
-.top-articles__article__image {
-  width: 30%;
+.article__image {
+  height: 100%;
 }
-.top-articles__article .article__content {
+.article__content {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
-  color: red;
   justify-content: space-between;
+}
+.article__title-number {
+  font-size: 1.8rem;
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 800;
+}
+.article__title {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.article__text {
+  font-size: 1rem;
+  color: hsl(236deg, 13%, 42%);
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
