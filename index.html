@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="sass/reset.css">
-  <link rel="stylesheet" href="sass/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | News homepage</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="sass/reset.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | News homepage</title>
+  </head>
   <body>
-    <!-- HEADER START -->
+    <div class="darker-background-layer"></div>
     <header class="header">
-      <img class="header__logo" src="./assets/images/logo.svg" alt="" >
-      <button class="nav__hamburger">
-        <img src="./assets/images/icon-menu.svg" alt="">
+      <img class="header__logo" src="./assets/images/logo.svg" alt="3d geometric shapes">
+      <button class="header__hamburger--closed">
+        <img src="./assets/images/icon-menu.svg" alt="hamburger menu">
       </button>
       <nav class="header__nav">
         <ul class="nav__list">
+          <button class="header__hamburger--open">
+            <img src="./assets/images/icon-menu-close.svg" alt="hamburger menu">
+          </button>
           <li>Home</li>
           <li>New</li>
           <li>Popular</li>
@@ -26,12 +29,12 @@
           <li>Categories</li>
         </ul>
       </nav>
+      
     </header>
-    <!-- HEADER END -->
 
-    <!-- HERO START -->
+
     <section class="hero">
-      <img class="hero__image" src="./assets/images/image-web-3-mobile.jpg" alt="">
+      <img class="hero__image" src="./assets/images/image-web-3-mobile.jpg" alt="hamburger menu">
       <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
       <p class="hero__text">
         We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
@@ -39,9 +42,6 @@
       </p>
       <button class="hero__button">READ MORE</button>
     </section>
-    <!-- HERO END-->
-
-    <!-- NEW START -->
     <section class="news">
       <h2 class="news__section-title">New </h2>
       <ul>
@@ -55,7 +55,7 @@
           <p class="news-item__text">What are the possible adverse effects of on-demand AI image generation?</p>
         </li>
         <hr>
-        <li class="news__item">
+        <li class="news__item news__item--last">
           <h3 class="news-item__title">Is VC Funding Drying Up?</h3>
           <p class="news-item__text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </li>
@@ -77,18 +77,19 @@
         <img class="article__image" src="./assets/images/image-top-laptops.jpg" alt="">
         <div class="article__content">
           <p class="article__title-number">02</p>
-          <h3 class="article__title">Reviving Retro PCs</h3>
-          <p class="article__text">What happens when old PCs are given modern upgrades?</p>
+          <h3 class="article__title">Top 10 Laptops of 2022</h3>
+          <p class="article__text">Our best picks for various needs and budgets.</p>
         </div>
       </div>
       <div class="article">
         <img class="article__image" src="./assets/images/image-gaming-growth.jpg" alt="">
-        <div class="article__content">
+        <div class="article__content arti">
           <p class="article__title-number">03</p>
-          <h3 class="article__title">Reviving Retro PCs</h3>
-          <p class="article__text">What happens when old PCs are given modern upgrades?</p>
+          <h3 class="article__title">The Growth of Gaming</h3>
+          <p class="article__text">How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>
