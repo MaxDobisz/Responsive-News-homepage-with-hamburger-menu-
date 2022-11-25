@@ -30,32 +30,35 @@ hr {
 .header__logo {
   height: 2rem;
 }
-.header__nav {
-  display: none;
-  z-index: 2;
-}
-.header__nav .darker-background-layer {
+.header .darker-background-layer {
   position: fixed;
   top: 0;
   left: 0;
   background-color: black;
 }
-.header__nav--active {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
+.header__nav {
   background-color: white;
-  width: 70%;
   display: block;
   height: 100%;
+  padding: 1rem;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 70%;
+  z-index: 2;
+  transition: 0.4s;
 }
-.header__nav--active .nav__list {
+.header__nav .nav__list {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
-.header__nav--active .nav__list .header__hamburger--open {
+.header__nav .nav__list .header__hamburger--open {
   align-self: flex-end;
+  margin: 1rem 0.2rem 4rem 0;
+}
+.header__nav--active {
+  right: 0;
 }
 
 .hero__image {

@@ -26,21 +26,6 @@ hr {
     border: none;
 }
 
-// body::after {
-//     content: '';
-//     position: absolute;
-//     pointer-events: none;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 0,);
-//     opacity: 50%;
-//     z-index: 5;
-// }
-
-
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -50,50 +35,48 @@ hr {
         height: 2rem;
     }
 
+    .darker-background-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        
+    }
+
     &__nav{
-        display: none;
+        background-color: white;
+        display: block;
+        height: 100%;
+        padding: 1rem;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        width: 70%;
         z-index: 2;
-        .darker-background-layer {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: black;
-            
+        transition: 0.4s;
+
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .header__hamburger--open{
+                align-self: flex-end;
+                margin: 1rem .2rem 4rem 0;
+            }
         }
+
 
 
         &--active{
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 1rem;
-            background-color: white;
-            width: 70%;
-            display: block;
-            height: 100%;
-            .nav__list {
-                display: flex;
-                flex-direction: column;
+           right: 0;
+           
 
-                .header__hamburger--open{
-                    align-self: flex-end;
-                }
-            }
-            
-            
 
+            
         }
-
-        
-
-        
-
-
     }
 }
-
-
-
 
 .hero {
     &__image {
@@ -129,8 +112,6 @@ hr {
     color: white;
     margin: 2rem 0;
     padding: 2rem 1rem;
-
-   
 
     &__section-title{
         color: hsl(35, 77%, 62%);
