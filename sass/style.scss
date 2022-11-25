@@ -184,37 +184,48 @@ hr {
             display: none;
         }
 
-
         &__nav{
-            background-color: white;
-            display: block;
-            height: 100%;
-            padding: 1rem;
             position: static;
-            right: -100%;
-            top: 0;
-            width: 70%;
-            z-index: 2;
-            transition: right .4s;
-            font-size: 1rem;
-            font-weight: 200;
-
-            
-
             
             .nav__list {
                 flex-direction: row;
                 justify-content: flex-end;
-                gap: 2rem;
 
                 .header__hamburger--open{
                     display: none;
                 }
 
                 .nav__item:hover{
-                   color: $Soft-red;
+                    color: $Soft-red;
                 }
             }
         }
     }
+
+    .hero {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+    
+        &__title {
+            width: 50%;
+            padding: 2rem 2rem 0 0;
+        }
+    
+        .decription-wrapper {
+            padding: 2rem 0;
+            width: 50%;
+        }
+        
+        &__button:hover{
+            background-color: $Grayish-blue--very-dark;
+        }
+    }
+
+
+
+
+
+
+
 }

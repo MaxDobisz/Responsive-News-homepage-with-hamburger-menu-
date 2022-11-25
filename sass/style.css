@@ -156,28 +156,32 @@ hr {
     display: none;
   }
   .header__nav {
-    background-color: white;
-    display: block;
-    height: 100%;
-    padding: 1rem;
     position: static;
-    right: -100%;
-    top: 0;
-    width: 70%;
-    z-index: 2;
-    transition: right 0.4s;
-    font-size: 1rem;
-    font-weight: 200;
   }
   .header__nav .nav__list {
     flex-direction: row;
     justify-content: flex-end;
-    gap: 2rem;
   }
   .header__nav .nav__list .header__hamburger--open {
     display: none;
   }
   .header__nav .nav__list .nav__item:hover {
     color: hsl(5deg, 85%, 63%);
+  }
+  .hero {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hero__title {
+    width: 50%;
+    padding: 2rem 2rem 0 0;
+  }
+  .hero .decription-wrapper {
+    padding: 2rem 0;
+    width: 50%;
+  }
+  .hero__button:hover {
+    background-color: hsl(240deg, 100%, 5%);
   }
 }/*# sourceMappingURL=style.css.map */
