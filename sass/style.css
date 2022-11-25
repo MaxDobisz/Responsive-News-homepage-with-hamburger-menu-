@@ -30,12 +30,6 @@ hr {
 .header__logo {
   height: 2rem;
 }
-.header .darker-background-layer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: black;
-}
 .header__nav {
   background-color: white;
   display: block;
@@ -46,7 +40,7 @@ hr {
   top: 0;
   width: 70%;
   z-index: 2;
-  transition: 0.4s;
+  transition: right 0.4s;
 }
 .header__nav .nav__list {
   display: flex;
@@ -143,17 +137,18 @@ hr {
 }
 
 .darker-background-layer {
-  display: none;
-  background-color: black;
-  height: 100vh;
+  display: block;
   width: 100vw;
-  z-index: 1;
+  height: 100vh;
+  background-color: black;
   position: fixed;
   top: 0;
-  left: 0;
-  opacity: 50%;
+  left: -100%;
+  opacity: 0;
+  transition: opacity 0.4s linear;
 }
 
 .darker-background-layer--active {
-  display: block;
+  left: 0;
+  opacity: 50%;
 }/*# sourceMappingURL=style.css.map */
