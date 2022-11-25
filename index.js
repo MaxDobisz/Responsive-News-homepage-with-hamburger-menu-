@@ -13,3 +13,12 @@ hamburgerOpen.addEventListener('click', () => {
     navigation.classList.remove('header__nav--active');
     darkerBackgroundLayer.classList.remove('darker-background-layer--active');
 });
+
+const navItems = document.querySelectorAll('.nav__item');
+navItems.forEach(item => item.addEventListener('click', () => {
+    navigation.classList.remove('header__nav--active');
+    darkerBackgroundLayer.classList.remove('darker-background-layer--active');
+}))
+
+console.log(navItems)
+
