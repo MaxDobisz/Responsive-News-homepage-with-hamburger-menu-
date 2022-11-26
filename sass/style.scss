@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    margin: 0 auto;
     padding: 15px;
     max-width: 1440px;
 }
@@ -21,7 +22,6 @@ hr {
 }
 
 .darker-background-layer {
-    display: block;
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -29,12 +29,12 @@ hr {
     top: 0;
     left: -100%;;
     opacity: 0;
-    transition: opacity .4s linear;
 }    
 
 .darker-background-layer--active {
     left: 0;
     opacity: 50%;
+    transition: opacity .4s linear;
 }
 
 .header {
@@ -165,6 +165,10 @@ hr {
         font-size: 1.1rem;
     }
 
+    &__title:hover {
+        color: $Soft-red;
+    }
+
     &__text {
         font-size: 1rem;
         color: $Grayish-blue--dark;
@@ -176,6 +180,8 @@ hr {
 
 @media (min-width: 1024px) {
     .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
         display: flex;
         justify-content: space-between;
         padding: 1rem 0 2rem;
@@ -202,30 +208,98 @@ hr {
         }
     }
 
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0 2rem;
+    }
+
+
     .hero {
-        width: 60%;
-        display: flex;
-        flex-wrap: wrap;
-    
-        &__title {
-            width: 50%;
-            padding: 2rem 2rem 0 0;
-        }
-    
-        .decription-wrapper {
-            padding: 2rem 0;
-            width: 50%;
-        }
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      
+        gap: 0 2rem;
         
+
+
+        picture {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .hero__title {
+            padding: 0;
+            margin-top: 1rem;
+            margin-right: 4rem;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .hero__text {
+            margin-top: 1rem;
+        }
+
+        .hero__text, .hero__button {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
         &__button:hover{
             background-color: $Grayish-blue--very-dark;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        button {
+            margin: 0;
+            margin-top: 1rem;
+        }
+    }
+    
+    .news {
+        margin: 0;
+        &-item__title:hover {
+            color: $Soft-orange
         }
     }
 
 
 
+        .articles {
+            margin-top: 1rem;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: grid;
+            gap: 0 2rem;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
 
 
 
+        .article--1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
 
+        .article--2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .article--3 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
 }
