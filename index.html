@@ -15,27 +15,29 @@
     <div class="darker-background-layer"></div>
     <header class="header">
       <img class="header__logo" src="./assets/images/logo.svg" alt="3d geometric shapes">
-      <button class="header__hamburger--closed">
+      <button class="header__hamburger-closed">
         <img src="./assets/images/icon-menu.svg" alt="hamburger menu">
       </button>
+      <button class="header__hamburger-open">
+        <img src="./assets/images/icon-menu-close.svg" alt="hamburger menu">
+      </button>
       <nav class="header__nav">
-        <ul class="nav__list">
-          <button class="header__hamburger--open">
-            <img src="./assets/images/icon-menu-close.svg" alt="hamburger menu">
-          </button>
-          <li class="nav__item"><a href="#home">Home</a></li>
-          <li class="nav__item"><a href="#news">New</a></li>
-          <li class="nav__item"><a href="#popular">Popular</a></li>
-          <li class="nav__item"><a href="#">Trending</a></li>
-          <li class="nav__item"><a href="#">Categories</a></li>
+        <ul class="header__nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">New</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
         </ul>
       </nav>
     </header>
+
+
+
     <section class="hero" id="home">
-      
       <picture>
         <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 1024px)">
-        <img class="hero__image" src="./assets/images/image-web-3-desktop.jpg" alt="hamburger menu">
+        <img class="hero__image" src="./assets/images/image-web-3-desktop.jpg" alt="3d geometric shapes">
       </picture>
           <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
           <div class="wrapper">
@@ -96,6 +98,9 @@
         </div>
       </div>
     </section>
-    
+    <footer class="footer">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/MaxDobisz">Max</a>.
+    </footer>
   </body>
 </html>
