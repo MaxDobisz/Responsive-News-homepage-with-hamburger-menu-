@@ -93,8 +93,8 @@ hr {
 }
 .hero__text {
   color: hsl(236deg, 13%, 42%);
-  line-height: 1.7;
   font-weight: 600;
+  line-height: 1.7;
 }
 .hero__button {
   background-color: hsl(5deg, 85%, 63%);
@@ -114,8 +114,8 @@ hr {
 }
 .news__section-title {
   color: hsl(35deg, 77%, 62%);
-  font-weight: 700;
   font-size: 2rem;
+  font-weight: 700;
 }
 .news__item {
   margin: 2rem 0;
@@ -123,45 +123,45 @@ hr {
 .news__item--last {
   margin: 2rem 0 0;
 }
-.news__item .news-item__title {
-  margin-bottom: 1rem;
-  font-weight: 800;
+.news__item-title {
   font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
 }
-.news__item .news-item__text {
+.news__item-text {
   color: hsl(233deg, 8%, 79%);
   line-height: 1.7rem;
 }
 
-.article {
-  margin: 3rem 0;
+.articles__item {
   display: flex;
   gap: 5%;
   height: 130px;
+  margin: 3rem 0;
 }
-.article__image {
+.articles__item-image {
   height: 100%;
 }
-.article__content {
+.articles__item-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.article__title-number {
-  font-size: 1.8rem;
+.articles__item-title-number {
   color: hsl(233deg, 8%, 79%);
+  font-size: 1.8rem;
   font-weight: 800;
 }
-.article__title {
-  font-weight: 800;
+.articles__item-title {
   font-size: 1.1rem;
+  font-weight: 800;
 }
-.article__title:hover {
+.articles__item-title:hover {
   color: hsl(5deg, 85%, 63%);
 }
-.article__text {
-  font-size: 1rem;
+.articles__item-text {
   color: hsl(236deg, 13%, 42%);
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.7rem;
 }
@@ -169,15 +169,15 @@ hr {
 .footer {
   text-align: center;
 }
-.footer address {
+.footer__author {
   display: inline-block;
 }
 
 @media (min-width: 1024px) {
   body {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0 2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .header {
     grid-column: 1/4;
@@ -200,68 +200,56 @@ hr {
     color: hsl(5deg, 85%, 63%);
   }
   .hero {
-    grid-column: 1/3;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0 2rem;
+    grid-column: 1/3;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .hero picture {
+  .hero__picture {
     grid-column: 1/3;
   }
-  .hero .hero__title {
-    padding: 0;
-    margin-top: 1rem;
-    margin-right: 4rem;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .hero .hero__text {
-    margin-top: 1rem;
-  }
-  .hero .hero__text, .hero .hero__button {
-    grid-column: 2/3;
+  .hero__title {
+    grid-column: 1/2;
     grid-row: 2/3;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    padding: 0;
   }
-  .hero__button:hover {
-    background-color: hsl(240deg, 100%, 5%);
-  }
-  .hero .wrapper {
+  .hero__content-wrapper {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    align-items: flex-start;
   }
-  .hero button {
-    margin: 0;
+  .hero__text, .hero__button {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .hero__text {
     margin-top: 1rem;
+  }
+  .hero__button {
+    margin-top: 1rem;
+    margin: 0;
+  }
+  .hero__button:hover {
+    background-color: hsl(240deg, 100%, 5%);
   }
   .news {
     margin: 0;
   }
-  .news-item__title:hover {
+  .news__item-title:hover {
     color: hsl(35deg, 77%, 62%);
   }
   .articles {
-    margin-top: 1rem;
-    grid-column-start: 1;
-    grid-column-end: 4;
     display: grid;
     gap: 0 2rem;
+    grid-column: 1/4;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 1rem;
   }
-  .article--1 {
-    grid-column: 1/2;
+  .footer {
+    grid-column: 1/4;
   }
-  .article--2 {
-    grid-column: 2/3;
-  }
-  .article--3 {
-    grid-column: 3/4;
-  }
-}
-.footer {
-  grid-column: 1/4;
 }/*# sourceMappingURL=style.css.map */
