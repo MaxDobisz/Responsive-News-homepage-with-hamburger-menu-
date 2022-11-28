@@ -14,6 +14,7 @@ body {
     margin: 0 auto;
     max-width: 1440px;
     padding: 15px;
+    background-color: $Off-white;
 }
 
 hr {
@@ -39,7 +40,6 @@ hr {
 }    
 
 .header {
-    align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 1rem 0 2rem;
@@ -50,16 +50,16 @@ hr {
     }
 
     &__hamburger {
-        margin-top: 1.5rem;
         position: absolute;
         right:0;
         top: 0;
 
+        &--closed {
+            margin-top: 1.5rem;
+        }
+
         &--open {
-            margin-right: 0.2rem;
-            margin-right: 1.3rem;
-            margin-top: 1rem;
-            margin-top: 2rem;
+            margin: 2rem 1.3rem 0 0;
             opacity: 0;
             position: fixed;
     
@@ -74,7 +74,6 @@ hr {
     &__nav {
         background-color: $Off-white;
         height: 100%;
-        padding: 1rem;
         position: fixed;
         right: -100%;
         top: 0;
@@ -91,8 +90,7 @@ hr {
             flex-direction: column;
             font-size: 1.2rem;
             gap: 2rem;
-            padding-left: 1rem;
-            padding-top: 9rem;
+            padding: 9rem 0 0 1rem;
         }
     }
 }
@@ -112,7 +110,7 @@ hr {
     &__text {
         color: $Grayish-blue--dark;
         font-weight: 600;
-        line-height: 1.7;
+        line-height: 1.7rem;
     }
 
     &__button {
@@ -120,7 +118,7 @@ hr {
         color: $Off-white;
         font-size: 1rem;
         font-weight: 700;
-        letter-spacing: .3rem;
+        letter-spacing: .3em;
         margin: 1.5rem 0;
         padding: 1em 2em;
     }
@@ -214,12 +212,9 @@ hr {
 
     .header {
         grid-column: 1 / 4;
+        padding: 3rem 0;
 
-        &__hamburger--closed {
-            display: none;
-        }
-
-        &__hamburger--open {
+        &__hamburger--closed, &__hamburger--open {
             display: none;
         }
 
@@ -260,7 +255,7 @@ hr {
             align-items: flex-start;
             display: flex;
             flex-direction: column;
-            height: 100%;
+            gap: 1rem;
             justify-content: space-between;
         }
 
@@ -274,7 +269,6 @@ hr {
         }
 
         &__button {
-            margin-top: 1rem;
             margin: 0;
 
             &:hover {
