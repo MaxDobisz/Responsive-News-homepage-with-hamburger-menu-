@@ -195,6 +195,12 @@ hr {
   .header__nav-item:hover {
     color: hsl(5deg, 85%, 63%);
   }
+  .main {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 2rem;
+  }
   .hero {
     display: grid;
     gap: 0 2rem;
