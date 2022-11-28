@@ -21,7 +21,7 @@ Users should be able to:
 <img src="./screenshots/mobile2.png" width="25%" margin="200px"/>
 
 ## Links
-- Solution URL: https://news-homepage-gold.vercel.app/ CHANGE!!!!!!!!!!
+- [Solution](https://www.frontendmentor.io/solutions/bem-sass-flexbox-css-grid-mobilefirst-XLUtWb_4IC)
 - Live Site URL: https://news-homepage-gold.vercel.app/
 
 ## Built with
