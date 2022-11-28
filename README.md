@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Screenshots
 <img src="./screenshots/desktop.png"/>
-<img  src="./screenshots/mobile1.png" width="48%"/>
-<img align='right' src="./screenshots/mobile2.png" width="48%" margin="200px"/>
+<img src="./screenshots/mobile1.png" width="25%"/>
+<img src="./screenshots/mobile2.png" width="25%" margin="200px"/>
 
 ## Links
 - Solution URL: https://news-homepage-gold.vercel.app/ CHANGE!!!!!!!!!!
