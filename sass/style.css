@@ -8,6 +8,8 @@ body {
   max-width: 1440px;
   padding: 15px;
   background-color: hsl(36deg, 100%, 99%);
+  caret-color: transparent;
+  cursor: default;
 }
 
 hr {
@@ -177,6 +179,9 @@ hr {
     display: grid;
     gap: 0 2rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .darker-background-layer {
+    display: none;
   }
   .header {
     grid-column: 1/4;
